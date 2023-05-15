@@ -8,6 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuIntegrado.unity
     guid: a1bf3c5b28591e74f9117ceed8d7b6c9
+  - enabled: 1
+    path: Assets/Scenes/Mapa.unity
+    guid: e08a18d8ec31062439863bc91580550e
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: a3681e7af55607e4d9f19b8d60283b0b, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 3adbb392ba8cfa34088f604a0589663d, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4c9e7d69e289c2b47b74ec7ba95df4b0, type: 2}
