@@ -9,16 +9,16 @@ public class WebViewTest : MonoBehaviour
     public void ShowUrlFullScreen()
     {
         GpmWebView.ShowUrl(
-            "https://studio.onirix.com/projects/be831c316b1c4bf8bbadf21523f009d6/webar?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU5MjMsInByb2plY3RJZCI6MTY2MjAsInJvbGUiOjMsImlhdCI6MTYyMzkwNTYzOX0.VHCvELHkwnBM1XXPNhS_qWWDwHdSQX2fD6ZwDDC2VWc",
+            "https://goo.gl/maps/iivk2yoKzFXg5Xtu8",
             new GpmWebViewRequest.Configuration()
             {
                 style = GpmWebViewStyle.FULLSCREEN,
-                orientation = GpmOrientation.PORTRAIT,
+                orientation = GpmOrientation.UNSPECIFIED,
                 isClearCookie = true,
                 isClearCache = true,
                 isNavigationBarVisible = true,
-                navigationBarColor = "#4B96E6",
-                title = "The page title.",
+                navigationBarColor = "#FF7000",
+                title = "Lista SomMagic.",
                 isBackButtonVisible = true,
                 isForwardButtonVisible = true,
                 supportMultipleWindows = true,
