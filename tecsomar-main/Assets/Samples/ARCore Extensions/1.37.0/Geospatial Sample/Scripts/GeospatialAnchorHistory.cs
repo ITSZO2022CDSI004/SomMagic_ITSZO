@@ -25,6 +25,27 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
     using UnityEngine;
 
     /// <summary>
+    /// Describes the current type of anchor created by screen tap.
+    /// </summary>
+    public enum AnchorType
+    {
+        /// <summary>
+        /// Type <c><see cref="GeospatialAnchor"/></c>.
+        /// </summary>
+        Geospatial = 0,
+
+        /// <summary>
+        /// Type <c><see cref="RooftopAnchor"/></c>.
+        /// </summary>
+        Rooftop = 1,
+
+        /// <summary>
+        /// Type <c><see cref="TerrainAnchor"/></c>.
+        /// </summary>
+        Terrain = 2,
+    }
+
+    /// <summary>
     /// A serializable struct that stores the basic information of a persistent geospatial anchor.
     /// </summary>
     [Serializable]
@@ -56,7 +77,18 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         public double Heading;
 
         /// <summary>
-        /// Construct an Geospatial Anchor history.
+        /// Anchor type of the creation, used to instantiate the original anchor type.
+        /// </summary>
+        public AnchorType AnchorType;
+
+        /// <summary>
+        /// Rotation of the creation pose as a quaternion, used to calculate the original
+        /// orientation.
+        /// </summary>
+        public Quaternion EunRotation;
+
+        /// <summary>
+        /// Construct a Geospatial Anchor history.
         /// </summary>
         /// <param name="time">The time this Geospatial Anchor was created.</param>
         /// <param name="latitude">
@@ -65,21 +97,26 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         /// Longitude of the creation pose in degrees.</param>
         /// <param name="altitude">
         /// Altitude of the creation pose in meters above the WGS84 ellipsoid.</param>
-        /// <param name="heading">
-        /// Heading of the creation pose in degrees, used to calculate the original orientation.
+        /// <param name="anchorType">
+        /// Anchor type of the creation.</param>
+        /// <param name="eunRotation">
+        /// Rotation of the creation pose as a quaternion, used to calculate the original
+        /// orientation.
         /// </param>
-        public GeospatialAnchorHistory(
-            DateTime time, double latitude, double longitude, double altitude, double heading)
+        public GeospatialAnchorHistory(DateTime time, double latitude, double longitude,
+            double altitude, AnchorType anchorType, Quaternion eunRotation)
         {
             SerializedTime = time.ToString();
             Latitude = latitude;
             Longitude = longitude;
             Altitude = altitude;
-            Heading = heading;
+            Heading = 0.0f;
+            AnchorType = anchorType;
+            EunRotation = eunRotation;
         }
 
         /// <summary>
-        /// Construct an Geospatial Anchor history.
+        /// Construct a Geospatial Anchor history.
         /// </summary>
         /// <param name="latitude">
         /// Latitude of the creation pose in degrees.</param>
@@ -87,12 +124,17 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
         /// Longitude of the creation pose in degrees.</param>
         /// <param name="altitude">
         /// Altitude of the creation pose in meters above the WGS84 ellipsoid.</param>
-        /// <param name="heading">
-        /// Heading of the creation pose in degrees, used to calculate the original orientation.
+        /// <param name="anchorType">
+        /// Anchor type of the creation.</param>
+        /// <param name="eunRotation">
+        /// Rotation of the creation pose as a quaternion, used to calculate the original
+        /// orientation.
         /// </param>
         public GeospatialAnchorHistory(
-            double latitude, double longitude, double altitude, double heading) :
-            this(DateTime.Now, latitude, longitude, altitude, heading)
+            double latitude, double longitude, double altitude, AnchorType anchorType,
+            Quaternion eunRotation) :
+            this(DateTime.Now, latitude, longitude, altitude, anchorType,
+            eunRotation)
         {
         }
 
