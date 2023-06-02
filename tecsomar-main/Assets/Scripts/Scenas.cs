@@ -7,12 +7,14 @@ public class Scenas : MonoBehaviour
     public static int ARview = 0;
     public static int Mapaview = 0;
     public static int Menuview = 0;
+    public static int Geoview = 0;
 
     private void Start()
     {
         if (SceneManager.GetActiveScene().name == "AR") View(ARview);
         if (SceneManager.GetActiveScene().name == "Mapa") View(Mapaview);
         if (SceneManager.GetActiveScene().name == "MenuIntegrado") View(Menuview);
+        if (SceneManager.GetActiveScene().name == "4_Geoposcionamiento") View(Geoview);
     }
     public void OpenLink(string link)
     {
@@ -49,5 +51,9 @@ public class Scenas : MonoBehaviour
     public void setMenuValue(int i)
     {
         Menuview = i;
+    }
+    public void setGeoValue(int i)
+    {
+        Geoview = i;
     }
 }

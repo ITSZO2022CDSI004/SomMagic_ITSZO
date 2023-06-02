@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mapa.unity
     guid: e08a18d8ec31062439863bc91580550e
+  - enabled: 1
+    path: Assets/Scenes/4_Geoposcionamiento.unity
+    guid: 648137c68f170aa498198211e0f43a75
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: a3681e7af55607e4d9f19b8d60283b0b, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 3adbb392ba8cfa34088f604a0589663d, type: 2}
