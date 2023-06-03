@@ -177,11 +177,61 @@ MonoBehaviour:
   Heading: 0
   AnchorManager: {fileID: 1808074522}
   geospatialObjects:
-  - ObjectPrefab: {fileID: 919132149155446097, guid: c49c212dd9414a341b4be86ac3bdf80d, type: 3}
+  - ObjectPrefab: {fileID: 5658240532613506815, guid: a34e6e77c47cde14e910901a3236d817, type: 3}
     EarthPosition:
-      Latitude: 0
-      Longitude: 0
-      Altitude: 0
+      Latitude: 23.63353
+      Longitude: -103.63795
+      Altitude: 2290.6515
+  - ObjectPrefab: {fileID: 127539304453242110, guid: 3b01c8724c29cc54b9bf747d8a680170, type: 3}
+    EarthPosition:
+      Latitude: 23.6292058
+      Longitude: -103.6415213
+      Altitude: 2314.6483
+  - ObjectPrefab: {fileID: 8363980553050867125, guid: 2b8c80c9d12c33d45bea907bd8bf540b, type: 3}
+    EarthPosition:
+      Latitude: 23.63474
+      Longitude: -103.6378
+      Altitude: 2293.6507
+  - ObjectPrefab: {fileID: 1123513449192898438, guid: a757a63555c43fb438f45215496f5046, type: 3}
+    EarthPosition:
+      Latitude: 23.632235
+      Longitude: -103.6396923
+      Altitude: 2289.6492
+  - ObjectPrefab: {fileID: 3698321616878685453, guid: 9b61c2ff91780ed478778d9e7fc2f191, type: 3}
+    EarthPosition:
+      Latitude: 23.63179
+      Longitude: -103.64002
+      Altitude: 2289.6489
+  - ObjectPrefab: {fileID: 3353325466981509906, guid: 788a7c19d1b06274eae6f13c12ad8285, type: 3}
+    EarthPosition:
+      Latitude: 23.6327053
+      Longitude: -103.6413664
+      Altitude: 2286.6454
+  - ObjectPrefab: {fileID: 7657515305609269385, guid: 7884f2b039e9b0848b66a1e2d9882c3d, type: 3}
+    EarthPosition:
+      Latitude: 23.633026
+      Longitude: -103.6435188
+      Altitude: 2282.6407
+  - ObjectPrefab: {fileID: 4181666963441845972, guid: 4b375200e7176e14580b5fdfab8b22ed, type: 3}
+    EarthPosition:
+      Latitude: 23.6311554
+      Longitude: -103.6411756
+      Altitude: 2297.6459
+  - ObjectPrefab: {fileID: 1570856826970104717, guid: 151706e34b26a20409dc991bcb909bc1, type: 3}
+    EarthPosition:
+      Latitude: 23.6329246
+      Longitude: -106.6422146
+      Altitude: 2285.6435
+  - ObjectPrefab: {fileID: 710188382199432474, guid: 9177a415c305e4545abce2ab5eefe1cd, type: 3}
+    EarthPosition:
+      Latitude: 23.6316438
+      Longitude: -103.6415387
+      Altitude: 2285.646
+  - ObjectPrefab: {fileID: 710188382199432474, guid: 9177a415c305e4545abce2ab5eefe1cd, type: 3}
+    EarthPosition:
+      Latitude: 23.63504
+      Longitude: -103.63729
+      Altitude: 2292.6515
 --- !u!114 &12518694
 MonoBehaviour:
   m_ObjectHideFlags: 0
